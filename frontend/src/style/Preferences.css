@@ -1,0 +1,18 @@
+.preferences-container h2{
+    margin-bottom: 10px;    /* spacing between heading and list */
+}
+
+.preferences-container ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.preferences-container{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* center them horizontally */
+}

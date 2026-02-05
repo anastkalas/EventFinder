@@ -1,0 +1,183 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border-width: 0px 0px 1px 0px;  
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 40px;
+    height: 200px;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.music, .health, .technology, .business, .fitness, .art{
+  display: flex;
+  flex-direction: column;
+}
+
+.music-icon, .health-icon, .technology-icon, .business-icon, .fitness-icon, .art-icon{
+  height: 50px;
+  width: 50px;
+
+}
+
+.music:hover, .health:hover, .technology:hover, .business:hover, .fitness:hover, .art:hover{
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+}
+
+.navbar-center{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-icon{
+    height:30px;
+    width: 30px;
+}
+
+.search-btn{
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+.search-btn:hover{
+    background: rgba(220, 220, 220, 0.5);
+}
+
+.navbar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.search-bar{
+    border-radius: 10px 0px 0px 10px;
+    height: 35px;
+}
+
+.search-bar:hover, .date-field:hover, .location-field:hover{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.date-field{
+    border-radius: 0px 0px 0px 0px; 
+    height: 37px;
+}
+
+.location-field{
+    height: 35px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.nav-logo{
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.home{
+    margin-left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: black;
+}
+
+.signup{
+    display: inline-block;
+  margin-right: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  height: 50px;
+  width: 90px;
+  text-align: center;
+  line-height:40px;   /* match height for perfect vertical centering */
+  border-radius: 20px;
+  color: black;
+}
+
+.login{
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: black;
+}
+
+.profile-icon{
+    height: 40px;
+    width: 40px;
+}
+
+.home:hover, .signup:hover, .login:hover{
+    background: rgba(220, 220, 220, 0.5);
+}
+
+.profile-link{
+    border-radius: 20px;
+}
+
+.profile-icon:hover{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.theme{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 150px;
+    padding-right: 50px;
+    margin-top: -10px;
+}
+
+.theme label{
+    font-size: 15px;
+    white-space: nowrap;
+    margin-left: -30px;
+}
+
+.font-size{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 150px;
+    padding-right: 50px;
+    margin-top: -10px;
+}

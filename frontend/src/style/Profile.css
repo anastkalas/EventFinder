@@ -1,0 +1,50 @@
+.profile-page{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.profile{
+    height: 300px;
+}
+
+.username{
+    font-size: 35px;
+}
+
+ul {
+  list-style: none;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.favorites, .preferences{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* center them horizontally */
+}
+
+.favorites h2, .preferences h2{
+    margin-bottom: 10px;    /* spacing between heading and list */
+}
+
+.favorites ul, .preferences ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}

@@ -1,0 +1,43 @@
+.eventpage{
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.event-img{
+    width: 100vw;
+}
+
+.eventpage-img{
+    width: 100vw;
+    height: 250px;
+}
+
+.eventpage-when, .eventpage-loc, .eventpage-price, .eventpage-interest, .eventpage-des{
+    font-size: 20px;
+}
+
+.eventpage-when strong, .eventpage-loc strong, .eventpage-price strong, .eventpage-interest strong, .eventpage-des strong{
+    font-size: 25px;
+}
+
+#fav-btn{
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 57px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#fav-com{
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
