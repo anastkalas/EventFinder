@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Secrets and Config
+.env
+**/.env
+
+# Database
+backend/database.sqlite
+*.sqlite
+
+# System/Logs
+npm-debug.log*
+.vscode/
