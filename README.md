@@ -75,18 +75,34 @@
 <h2>📂 Project Structure</h2>
 
 <pre>
-├── client/                 # React Frontend
+├── backend/                # Node.js Express Backend
+│   ├── logs/               # Application & error logs
 │   ├── src/
+│   │   ├── config/         # DB and API configurations
+│   │   ├── controllers/    # Route logic (Auth, Events, etc.)
+│   │   ├── middleware/     # Auth and Caching middlewares
+│   │   ├── models/         # Sequelize schemas
+│   │   ├── routes/         # API endpoint definitions
+│   │   ├── services/       # External API integrations
+│   │   ├── utils/          # Helper functions & loggers
+│   │   ├── app.js          # Express app configuration
+│   │   └── server.js       # Server entry point
+│   ├── .env                # Backend environment secrets
+│   └── database.sqlite     # Local SQLite database file
+│
+├── frontend/               # React Frontend
+│   ├── public/             # Static assets
+│   ├── src/
+│   │   ├── assets/         # Images and media
 │   │   ├── components/     # UI Components (NavBar, EventCard, etc.)
 │   │   ├── style/          # CSS Stylesheets
-│   │   └── index.js        # Main entry and routing
+│   │   ├── App.test.js     # Frontend tests
+│   │   ├── index.css       # Global styles
+│   │   ├── index.js        # Main entry point
+│   │   └── reportWebVitals.js
+│   └── .env                # Frontend environment variables
 │
-├── server/                 # Node.js Backend
-│   ├── controllers/        # Route logic (Auth, Events, Weather, etc.)
-│   ├── middleware/         # Auth and Caching middlewares
-│   ├── models/             # Sequelize schemas
-│   ├── services/           # External API integrations
-│   └── server.js           # Server entry point
+└── .gitignore              # Root git ignore file
 </pre>
 
 <hr />
