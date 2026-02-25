@@ -231,14 +231,14 @@ WEATHERMAPAPI_SECRET=your_key
 
 <h4>2. Backend Setup</h4>
 <pre>
-cd server
+cd backend
 npm install
 npm start
 </pre>
 
 <h4>3. Frontend Setup</h4>
 <pre>
-cd client
+cd frontend
 npm install
 npm start
 </pre>
