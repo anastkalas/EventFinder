@@ -22,7 +22,7 @@
 <ul>
   <li><strong>Multi-Source Aggregation:</strong> Fetches events from Ticketmaster and SerpApi with automatic deduplication.</li>
   <li><strong>Interest Index (PII):</strong> A custom "Public Interest Index" service that calculates event popularity based on sales status and availability.</li>
-  <li><strong>Categories:</strong> Specialized feeds for Music, Technology, Health, Business, Fitness, and Art.</li>
+  <li><strong>Categories:</strong> Feeds for Music, Technology, Health, Business, Fitness, and Art.</li>
   <li><strong>Smart Search:</strong> Filter events by location, date, and keyword.</li>
 </ul>
 
@@ -30,7 +30,7 @@
 <ul>
   <li><strong>Authentication:</strong> Secure user registration and login using <strong>JWT</strong> and <strong>bcrypt</strong> password hashing.</li>
   <li><strong>Favorites & Attendance:</strong> Save events to a personal list and track attendance counts.</li>
-  <li><strong>Personalized Recommendations:</strong> Generates a tailored feed based on user interests and history.</li>
+  <li><strong>Personalized Recommendations:</strong> Generates a tailored feed based on user interests.</li>
   <li><strong>Comments:</strong> Users can leave and manage feedback on specific event pages.</li>
 </ul>
 
