@@ -4,17 +4,7 @@
 
 <div align="center">
   <h1>🌐 Local Event Finder</h1>
-  <p align="center">
-    <em>A robust, full-stack web application designed to help users discover, track, and interact with events based on their location and interests.</em>
-  </p>
-  <p>
-    <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintained" />
-    <img src="https://img.shields.io/badge/License-Educational-blue.svg" alt="License" />
-    <img src="https://img.shields.io/badge/Stack-MERN-blueviolet.svg" alt="Stack" />
-  </p>
 </div>
-
-<hr />
 
 <h2>🚀 Features</h2>
 
@@ -220,7 +210,7 @@
 <h2>⚙️ Setup & Installation</h2>
 
 <h4>1. Environment Variables</h4>
-<p>Create a <code>.env</code> file in the <code>server</code> directory:</p>
+<p>Create a <code>.env</code> file in the <code>backend</code> directory:</p>
 <pre>
 PORT=5000
 JWT_SECRET=your_secret
