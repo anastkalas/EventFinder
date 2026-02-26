@@ -53,7 +53,7 @@
       <ul>
         <li>React.js</li>
         <li>React Router</li>
-        <li>Custom CSS (Dynamic Themes)</li>
+        <li>CSS</li>
         <li>Axios API Client</li>
       </ul>
     </td>
