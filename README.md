@@ -54,7 +54,7 @@
         <li>React.js</li>
         <li>React Router</li>
         <li>CSS</li>
-        <li>Axios API Client</li>
+        <li>Axios</li>
       </ul>
     </td>
   </tr>
