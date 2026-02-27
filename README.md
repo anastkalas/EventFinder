@@ -3,7 +3,7 @@
 <body>
 
 <div align="center">
-  <h1>🌐 Local Event Finder</h1>
+  <h1>🌐 Event Finder</h1>
 </div>
 
 <h2>🚀 Features</h2>
