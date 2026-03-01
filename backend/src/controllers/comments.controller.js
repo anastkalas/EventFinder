@@ -108,7 +108,7 @@ exports.getCommentsByEvent = async (req, res) => {
 
     const commentsForEvent = await Comment.findAll({
       where: { event_id: eventId },
-      order: [["create_at", "DESC"]], // ✅ matches your model exactly
+      order: [["create_at", "DESC"]],
     });
 
     return res.status(200).json({
