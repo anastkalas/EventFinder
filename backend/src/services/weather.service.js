@@ -53,8 +53,8 @@ exports.getWeatherData = async (location = null, date = null) => {
   return {
     location: geoResponse.data[0].name,
     temperature: weatherData.main?.temp ?? weatherData.main?.temp_min,
-    condition: weatherData.weather?.[0]?.description, // FIXED typo: was 'dercription'
-    humidity: weatherData.main?.humidity, // FIXED: was 'weather.main'
+    condition: weatherData.weather?.[0]?.description,
+    humidity: weatherData.main?.humidity, 
     wind_speed: weatherData.wind?.speed,
     datetime:
       weatherData.dt_txt ||
