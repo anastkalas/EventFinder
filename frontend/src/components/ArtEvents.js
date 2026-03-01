@@ -44,7 +44,6 @@ function ArtEvents() {
     // Initial load
     useEffect(() => {
         fetchRecommendations(false);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Handle Load More
@@ -57,23 +56,23 @@ function ArtEvents() {
     return (
         <div className="home-page">
 
-            {/* Title */}
+            /* Title */
             <h2 className="title">Event Recommendations</h2>
 
-            {/* Conditional rendering */}
+            /* Conditional rendering */
             {error && <p>{error}</p>}
             {recommendations.length === 0 && !loading && (
                 <p>No recommendations available yet. Try adding favorites!</p>
             )}
 
-            {/* Event list */}
+            /* Event list */
             <div className="event-list">
                 {recommendations.map((event) => (
                     <EventCard key={event.id} event={event} />
                 ))}
             </div>
 
-            {/* Load More button - always visible */}
+            /* Load More button - always visible */
             <div className="load-more-container">
                 <button id="load-more" onClick={handleLoadMore} disabled={loading}>
                     {loading ? "Loading..." : "Load More"}
