@@ -48,7 +48,7 @@ exports.login = async (req, res) => {
       { expiresIn: '1h' }
     );
 
-    // ✅ Include user object in response
+    // Include user object in response
     return res.json({
       message: "Login successful",
       token,
