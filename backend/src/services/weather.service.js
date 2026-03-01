@@ -38,6 +38,7 @@ exports.getWeatherData = async (location = null, date = null) => {
   let weatherData;
   if (isFuture && weatherResponse.data.list) {
     const forecasts = weatherResponse.data.list;
+    //find the single closest to the event forecast time 
     weatherData = forecasts.reduce((closest, curr) => {
       return Math.abs(new Date(curr.dt_txt) - eventDate) <
         Math.abs(new Date(closest.dt_txt) - eventDate)
