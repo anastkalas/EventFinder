@@ -31,7 +31,7 @@ exports.getEvents = async (req, res) => {
     // Deduplicate (prefer Ticketmaster version)
     const map = new Map();
     for (const e of events) {
-      const key = `${(e.title || "").toLowerCase()}_${e.start_time_iso || e.date || ""}`;
+      const key = `${(e.title || "").toLowerCase()}_${e.start_time_iso || e.date || ""}`; //creates key for each one if duplicated
       if (!map.has(key) || e.source === "Ticketmaster") {
         map.set(key, e);
       }
@@ -40,8 +40,8 @@ exports.getEvents = async (req, res) => {
 
     // Keyword filter
     if (query) {
-      const q = query.toLowerCase();
-      unique = unique.filter(
+      const q = query.toLowerCase(); // search term to lowercase
+      unique = unique.filter( // check if the search term is found
         (ev) =>
           ev.title?.toLowerCase().includes(q) ||
           ev.description?.toLowerCase().includes(q) ||
@@ -51,18 +51,20 @@ exports.getEvents = async (req, res) => {
     }
 
     // Date filter
-    if (/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    if (/^\d{4}-\d{2}-\d{2}$/.test(date)) { // \d{4} exactly four digits, - is hyphen
       unique = unique.filter((ev) => ev.start_time_iso === date);
     }
 
     // Pagination Config
-    const page = Number(req.query.page) || 1;
+    const page = Number(req.query.page) || 1; // pull page number from URL
     const limit = 12;
     const start = (page - 1) * limit;
 
     // If no results AND user asked for specific location → retry globally
     if (unique.length === 0 && location.toLowerCase() !== "world") {
-      const [sa2, tm2] = await fetchAll("world", category);
+      const [sa2, tm2] = await fetchAll("world", category); // ignore specific city
+
+      // code repeats the entire cleaning process again
       let fallback = [...withPII(sa2), ...withPII(tm2)];
 
       const map2 = new Map();
