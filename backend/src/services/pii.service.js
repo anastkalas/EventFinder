@@ -28,6 +28,7 @@ exports.computePublicInterestIndex = (event) => {
   // Step 3: Availability text hints
   let avail = 0.5;
   try {
+    //scans the notes and info fields for specific keywords
     const text = ((event?._raw_tm?.pleaseNote || event?.pleaseNote || "") + " " + (event?._raw_tm?.info || event?.info || "")).toLowerCase();
     if (text.includes("sold out")) avail = 1.0;
     else if (text.includes("limited")) avail = 0.8;
