@@ -4,26 +4,6 @@ import "../style/CommentCard.css";
 
 function CommentCard({ comment }){
 
-    /*const fetchEventTitle = async () => {
-        try{
-            const token = localStorage.getItem("token");
-
-            const response = await axios.get(
-                `${process.env.REACT_APP_API_URL}/api/favorites/getFavorites`,
-                {
-                    headers: { Authorization: `Bearer ${token}`},
-                }
-            );
-
-            //event_table info
-            const data = response.data.favorites || response.data || [];
-
-            if(!Array.isArray(data)) throw new Error("Invalid response format");
-        }catch(err){
-            console.error("Failed fetched event.");
-        }
-    }*/
-
     const text = comment.content;
     const eventTitle = comment.Event?.title || "Unknown Event";
 
