@@ -29,7 +29,7 @@ exports.addFavorites = async (req, res) => {
             });
         }
 
-        const [favorite, created] = await Favorite.findOrCreate({
+        const [favorite, created] = await Favorite.findOrCreate({ // favorite = model, created = True/False
             where: { user_id, event_id },
             defaults: { 
                 user_id,
